@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1 class="h1Col">  Simple, traffic-based pricing</h1>
+    <p class="billP">  Sign-up for our 30-day trial. No credit card required. </p>
+  </header>
+
+  <main class="d-flex  justify-content-center flex-column align-items-center">
+    <div class="d-flex justify-content-around w-100 ">
+      <p class="billPK">100K  Pageviews</p>
+      <p class="billP"> <span class="Dollar">  $ </span><span class="billPSpanN">0</span>/month </p>
+    </div>
+    <input class="w-75"   type="range"
+    min="0"
+    step="1"
+    id="rangeInput"
+    value="0"
+    >
+
+    <div class="d-flex justify-content-around w-75 mt-3 ">
+      <p class="billP">  Monthly Billing</p>
+      <div class="containerCheck ">
+        <input type="checkbox" id="checked">
+      <label for="checked" class="button"></label>
+    </div>
+      <p class="billP">  Yearly Billing <span class="billPSpan">25% discount</span></p>
+    </div>
+    <hr>
+
+    <div class="w-100 d-flex justify-content-between  ">
+      <ul>
+        <li>  Unlimited websites</li>
+        <li> 100% data ownership</li>
+        <li>  Email reports</li>
+      </ul>
+      <div class="d-flex justify-content-center align-items-center ">
+      <button class="StartButton ">  Start my trial</button>
+    </div>
+    </div>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
